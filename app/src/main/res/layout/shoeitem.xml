@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    >
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                android:id="@+id/coffeeImage"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/jordan" />
+
+            <TextView
+                android:id="@+id/descriptionShoe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameShoe"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/coffeeImage"
+                android:textSize="12sp"
+                tools:text="" />
+
+            <TextView
+                android:id="@+id/nameShoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/coffeeImage"
+                android:textSize="26sp"
+                android:textStyle="italic"
+               />
+
+            <TextView
+                android:id="@+id/sizeShoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriptionShoe"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/coffeeImage"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
